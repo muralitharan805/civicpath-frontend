@@ -32,7 +32,9 @@ import { ConstituencyService, ConstituencyResponse } from '../services/constitue
           <mat-card-header>
             <div class="header-content">
               <div class="logo-accent"></div>
-              <mat-card-title>CivicPath</mat-card-title>
+              <mat-card-title>
+                <h1 class="logo-title">CivicPath</h1>
+              </mat-card-title>
               <mat-card-subtitle>Tamil Nadu Assembly Constituencies</mat-card-subtitle>
             </div>
           </mat-card-header>
@@ -171,6 +173,17 @@ import { ConstituencyService, ConstituencyResponse } from '../services/constitue
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: -0.5px;
+    }
+    
+    .logo-title {
+      margin: 0;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      background: inherit;
+      -webkit-background-clip: inherit;
+      -webkit-text-fill-color: inherit;
+      display: inline-block;
     }
     
     mat-card-subtitle {
