@@ -401,7 +401,14 @@ export class MapComponent implements AfterViewInit {
     const lat = this.searchForm.controls.latitude.value;
     const lng = this.searchForm.controls.longitude.value;
 
-    this.map = L.map(this.mapElement.nativeElement).setView([lat, lng], 10);
+    this.map = L.map(this.mapElement.nativeElement, {
+      zoomControl: false
+    }).setView([lat, lng], 10);
+
+    L.control.zoom({
+      position: 'topright'
+    }).addTo(this.map);
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap'
