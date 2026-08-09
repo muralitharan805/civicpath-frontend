@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "civicpath-frontend",
+  "pages_build_output_dir": "dist/civicPath-frontend/browser",
+  "compatibility_date": "2026-07-26"
+}
