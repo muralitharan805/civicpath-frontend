@@ -1,11 +1,12 @@
 import { Component, signal, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MapComponent } from './map/map.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 import { SeoService } from './core/services/seo.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MapComponent],
+  imports: [RouterOutlet, MapComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
