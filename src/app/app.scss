@@ -1,0 +1,11 @@
+.civicpath-layout-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mat-sys-surface-container-low, #0f172a);
+}
+
+.app-viewport-content {
+  flex: 1;
+  position: relative;
+}
